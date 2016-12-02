@@ -1,0 +1,27 @@
+XTerm*Background : #170F0D
+XTerm*Foreground : #746C48
+XTerm*cursorColor: #6BA16C
+XTerm*colorBD    : #C8B984
+XTerm*color0     : #392925
+XTerm*color8     : #544B2E
+XTerm*color1     : #98724C
+XTerm*color9     : #AF652F
+Xterm*color2     : #908F32
+XTerm*color10    : #C3C13D
+XTerm*color3     : #AA964C
+XTerm*color11    : #C8B55B
+XTerm*color4     : #7B854E
+XTerm*color12    : #70A16C
+XTerm*color5     : #6B5644
+XTerm*color13    : #98724C
+XTerm*color6     : #5C5142
+XTerm*color14    : #778725
+XTerm*color7     : #C8B55B
+XTerm*color15    : #E4DC8C
+XTerm*font       : -*-Droid\Sans\Mono-*-*-*-14-*
+XTerm*ScrollBar  : false
+XTerm*ScrollKey  : true
+
+XTerm*VT100.Translations: #override \
+                    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+                    Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
