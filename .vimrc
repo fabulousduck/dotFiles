@@ -1,4 +1,4 @@
-" Maintainer: Ryan Vlttttttttttttt
+" Maintainer: Ryan Vlaming <ryanvlaming@icloud.com>
 " van der wal <mvdw at airmail dot cc>
 "
 "freshly pimped - duck
@@ -72,6 +72,21 @@ set statusline=%{Github(branch,repository)}%L:%l%=%m[%{Filesize()}]
 " User defined variables used for various plugins (vim-templates, vim-snippets).
 let username = "Ryan Vlaming"
 let email = "ryanvlaming@icloud.com"
+let g:ycm_rust_src_path="/home//Developer/rust-master/src"
+
+
+
+
+
+set colorcolumn =
+
+
+
+
+
+
+
+
 
 " If there's a .git repository, the function will display the current directory
 " name + the branch name. I'm using the directory name instead of the repository
@@ -147,6 +162,8 @@ nnoremap <M-Z> :tabprev<cr>
 nnoremap <M-X> :tabnext<cr>
 nnoremap Z :bprev<cr>
 nnoremap X :bnext<cr>
+nnoremap <S-s> :NERDTreeToggle<CR>
+nnoremap <S-q> :bd<CR>
 vnoremap < <gv
 vnoremap > >gv
 nnoremap N Nzz
@@ -190,3 +207,7 @@ endif
 " let g:syntastic_python_python_exec = 'python3'
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+
+nmap <silent> <F2> :NERDTreeFind<CR>
