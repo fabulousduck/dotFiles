@@ -19,6 +19,7 @@ alias .....="cd ../../../.."
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+alias update='sudo apt-get update'
 
 #mongodb
 alias mlaunch="sudo ./Downloads/mongodb-osx-x86_64-3.2.9/bin/mongod"
@@ -33,7 +34,10 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 
 alias browser='/usr/bin/open -a "/Applications/Google Chrome.app" "$@"'
 alias cls='clear'
+alias xip='curl icanhazip.com'
+alias arp='sudo arp-scan --localnet'
 alias workdir='cd /Applications/MAMP/htdocs/Bannerwise'
+alias snekserver='google-chrome http://localhost:8000 && python -m SimpleHTTPServer'
 alias heku='git add . && git commit -am "s-$1" && git push heroku github-api:master'
 alias sip='echo 51.15.1.150'
 alias vim="vi"
@@ -201,11 +205,10 @@ if [ -f '/Users/ryanvlaming/Downloads/google-cloud-sdk/completion.bash.inc' ]; t
 ##
 
 # MacPorts Installer addition on 2017-04-14_at_11:09:25: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="/opt/local/fbin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
 # MacPorts Installer addition on 2017-04-14_at_11:09:25: adding an appropriate MANPATH variable for use with MacPorts.
 export MANPATH="/opt/local/share/man:$MANPATH"
 # Finished adapting your MANPATH environment variable for use with MacPorts.
-
